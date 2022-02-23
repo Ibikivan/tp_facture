@@ -3,14 +3,12 @@ print("tout ce que vous avez à faire est de nous renseigner le paramètre des �
 print("et laisser la magie opérér")
 
 achats = []
-compteur = 1
 
 while True:
     print("Ajoutons un nouvel élément à vos courses.")
     name = input("Merçi d'entrer le nom du produit: ")
     price = int(input("Merci d'entrer le prix du produit: "))
-    quatity = int(input("Merci d'entrer les quantités du priduit: "))
-    produit = "produit" + str(compteur)
+    quatity = int(input("Merci d'entrer les quantités du produit: "))
     
     produit = {"name" : name,
                "price" : price,
@@ -18,7 +16,7 @@ while True:
     
     achats.append(produit)
     
-    choix = input("Voulez-vous ajouter un nouvel élément à votre liste de courses ? ")
+    choix = input("Ajouter un nouveau produit ? (tapez 'non' pour arrêter, ou 'Entrer pour continuer.) ")
     
     if choix == "non":
         break
